@@ -62,11 +62,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.5s;
 }
 header.sticky {
 
     background: #fff;
     padding: 40px 100px;
+    box-shadow: 0 5px 20px rba(0,0,0,0.1);
 }
 header .logo {
 
@@ -76,6 +78,10 @@ header .logo {
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 2px;
+}
+header .sticky .logo {
+
+    color: #111;
 }
 header ul {
 
@@ -95,6 +101,10 @@ header ul li a {
     margin: 0 15px;
     color: black;
     text-decoration: none;
+}
+header.sticky ul li a {
+
+    color: #111;
 }
 .heading {
 
@@ -125,4 +135,44 @@ header ul li a {
 img {
 
     max-width: 100%;
+}
+.services {
+
+    background: #111;
+}
+.heading.white {
+
+    color: #fff;
+}
+.services .content {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.services .content .servicesBx {
+
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+.services .content .servicesBx:hover {
+
+    background: #2196f3;
+}
+.services .content .servicesBx img {
+
+    max-width: 80px;
+    filter: invert(1);
+}
+.services .content .servicesBx h2 {
+
+    font-size: 20px;
+    font-weight: 600;
 }
